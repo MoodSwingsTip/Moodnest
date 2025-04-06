@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Redirect</title>
+</head>
+<body>
+    <a href="#" id="signup-link">Click here to sign up</a>
+
+    <script>
+        document.getElementById('signup-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+            window.location.href = 'https://github.com/organizations/signup_billing?account_screening_profile%5Baddress1%5D=88+Ebermore+Rd&account_screening_profile%5Baddress2%5D=&account_screening_profile%5Bcity%5D=Lumberton&account_screening_profile%5Bcountry_code%5D=&account_screening_profile%5Bfirst_name%5D=Rhonda&account_screening_profile%5Blast_name%5D=Hunt&account_screening_profile%5Bpostal_code%5D=28358&account_screening_profile%5Bregion%5D=North+Carolina&account_screening_profile%5Bvat_code%5D=&agreed_to_terms=yes&billing_email=hunter100904%40gmail.com&org_exists=false&organization%5Bcompany_name%5D=&organization%5Blogin%5D=Moodnest-beta-signup&organization%5Bplan%5D=business&organization%5Bprofile_name%5D=Moodnest+beta+signup+&plan_duration=month&ref_cta=Continue+with+Team&ref_loc=cards&ref_page=%2Fpricing&seats=1&terms_of_service_type=standard';
+        });
+    </script>
+</body>
+</html>
